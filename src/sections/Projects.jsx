@@ -7,7 +7,7 @@ const projects = [
     title: "News Magazine",
     description:
       "This is the full stack news magazine website that provides news articles across various categories. There is the backend admin panel to manage the content, categories and users.",
-    image: "/projects/project1.png",
+    image: "/projects/NewsMagazine.png",
     tags: ["HTML", "CSS", "PHP", "MySQL", "JavaScript", "Jquery"],
     Link: "#",
     github: "https://github.com/Sant7611/news-magazine",
@@ -25,7 +25,7 @@ const projects = [
 ];
 
 const Projects = () => (
-  <section className="py-32 relative overflow-hidden" id="projects">
+  <section className=" pb-10  relative overflow-hidden" id="projects">
     <div className="absolute top-1/4 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl " />
     <div className="absolute bottom-1/4 left-0 bg-highlight/5   rounded-full blur-3xl " />
 

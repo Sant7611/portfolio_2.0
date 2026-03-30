@@ -30,7 +30,7 @@ const highlights = [
 
 const About = () => {
   return (
-    <section className="py-32 relative overflow-hidden" id="about">
+    <section className="pb-15 pt-8 relative overflow-hidden" id="about">
       <div className="container mx-auto px-6 relative z-10 ">
         <div className="animate-fade-in text-center p-6 ">
           <span className="text-secondary-foreground  text-sm font-medium tracking-wide uppercase ">

@@ -2,26 +2,25 @@ import { AlertCircle, CheckCircle, Mail, MapPin, Phone, Send } from "lucide-reac
 import React, { useState } from "react";
 import Button from "@/components/Button";
 import emailjs from "@emailjs/browser";
-const contactInfo = [
-  {
-    icon: Mail,
-    label: "Email",
-    value: "surveerqwer123@gmail.com",
-    href: "mailto:sbohara579@gmail.com",
-  },
-  {
-    icon: Phone,
-    label: "Phone",
-    value: "+9779808188011",
-    href: "tel:+9779808188011",
-  },
-  {
-    icon: MapPin,
-    label: "Location",
-    value: "Tokha, kathmandu",
-    href: "#",
-  },
-];
+// const contactInfo = [
+//   {
+//     icon: Mail,
+//     label: "Email",
+//     value: "surveerqwer123@gmail.com",
+//     href: "mailto:sbohara579@gmail.com",
+//   },
+//   {
+//     icon: Phone,
+//     label: "Phone",
+//     value: "+9779808188011",
+//     href: "tel:+9779808188011",
+//   },
+//   {
+//     icon: MapPin,
+//     label: "Location",
+//     value: "Tokha, kathmandu",
+//     href: "#",
+//   },];
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -82,7 +81,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-32 relative overflow-hidden">
+    <section id="contact" className=" py-10 relative overflow-hidden">
       <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 " />
 
       <div className="mb-16 max-w-3xl text-center mx-auto ">
@@ -170,9 +169,9 @@ const Contact = () => {
                 : "bg-red-500/10 border border-red-500/20 text-red-700 "
               } `} >
                 {submitStatus.type === 'success' ? (
-                  <CheckCircle className="w-5 h-5 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 shrink-0" />
                 ): (
-                  <AlertCircle className="w-5 h-5 flex-shrink-0" />
+                  <AlertCircle className="w-5 h-5 shrink-0" />
                 )}
                 <p> {submitStatus.message} </p>
               </div>

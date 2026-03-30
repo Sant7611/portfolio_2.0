@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import Button from "@/components/Button";
 import {
   ArrowRight,
@@ -22,7 +21,7 @@ const Hero = () => {
           alt="hero image"
           className="w-full h-full object-cover opacity-40"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background  "></div>
+        <div className="absolute inset-0 bg-linear-to-b from-background/20 via-background/80 to-background  "></div>
       </div>
 
       {/* Green dots  */}
@@ -44,7 +43,7 @@ const Hero = () => {
         ))}
       </div>
       {/* Content  */}
-      <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
+      <div className="container mx-auto px-6 pt-32 pb-2 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* left column -text content  */}
           <div className="space-y-8">
@@ -155,7 +154,7 @@ const Hero = () => {
           <div className="relative overflow-hidden">
             <div className="flex animate-marquee">
               {[...skills, ...skills, ...skills].map((skill, idx) => (
-                <div className="flex-shrink-0 px-8 py-4" key={idx}>
+                <div className="shrink-0 px-8 py-4" key={idx}>
                   <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">
                     {skill}
                   </span>
