@@ -13,7 +13,7 @@ const skills = ["React", "Next.js", "TypeScript", "Git"];
 
 const Hero = () => {
   return (
-    <section id="home" className="container relative min-h-screen flex items-center overflow-hidden ">
+    <section id="home" className=" relative min-h-screen flex items-center overflow-hidden ">
       {/* bg  */}
 
       <div className="absolute inset-0">
