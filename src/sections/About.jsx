@@ -50,35 +50,21 @@ const About = () => {
             </h2>
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I'm a frontend developer with a love for turning ideas into
-                fast, beautiful, and intuitive web experiences. My weapons of
-                choice? React, Next.js, and TypeScript, with a strong obsession
-                for clean code that future-me won't regret reading.
+                I am a frontend developer with a passion for bringing ideas to life, delivering fast, beautiful, and intuitive experiences for the web. While my technology stack includes my favorites, React, Next.js, and TypeScript, my passion for delivering code that I know I will appreciate tomorrow is even stronger.
               </p>
 
               <p>
-                I don't just write code that works. I write code that
-                <em> makes sense</em>. From component-based architecture to
-                efficient state management, I follow best practices that keep
-                projects scalable, maintainable, and surprisingly enjoyable to
-                work with. Git is basically my diary at this point.
+                While delivering functional code is important, delivering functional and coherent code is even better. While this may sound simple, this is exactly my approach to frontend development. Version control is, for me, my daily documentation.
               </p>
 
               <p>
-                When I'm not pushing pixels or debugging that one CSS issue that
-                makes absolutely no sense, I'm exploring new technologies,
-                sharpening my problem-solving skills, and chasing that sweet
-                spot where great design meets great performance. My goal? Build
-                things people actually enjoy using and maybe impress myself a
-                little along the way.
+               While I spend a lot of time optimizing visuals and dealing with the never-ending world of CSS, I also spend time experimenting with new technologies, honing my problem-solving skills, and striving for that elusive sweet spot where design meets performance. While my goal is to deliver experiences that people actually enjoy, my ultimate goal is to continue to improve and deliver better experiences.
               </p>
             </div>
 
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foreground">
-                "To craft clean, scalable, and user-focused web experiences
-                while continuously learning, innovating, and growing as a
-                frontend developer."
+                "To develop clean, scalable, and user-friendly web experiences while constantly learning, innovating, and expanding as a frontend developer."
               </p>
             </div>
           </div>

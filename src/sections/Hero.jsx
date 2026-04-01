@@ -12,7 +12,10 @@ const skills = ["React", "Next.js", "TypeScript", "Git"];
 
 const Hero = () => {
   return (
-    <section id="home" className=" relative min-h-screen flex items-center overflow-hidden ">
+    <section
+      id="home"
+      className=" relative min-h-screen flex items-center overflow-hidden "
+    >
       {/* bg  */}
 
       <div className="absolute inset-0">
@@ -61,18 +64,23 @@ const Hero = () => {
                 <span className="text-primary glow-text ">Santosh Bohara</span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                — an aspiring frontend developer focused on React, Next.js, and
-                TypeScript. I enjoy building clean, responsive, and
-                user-friendly web interfaces while continuously improving my
-                skills in modern web development.
+                — an aspiring frontend developer with specific interests in
+                React, Next.js, and TypeScript. I find joy in building
+                well-designed, responsive, and user-friendly web interfaces
+                while honing my skills in the latest technologies used in web
+                development.
               </p>
             </div>
 
             {/* CTA  */}
             <div className="flex flex-wrap animate-fade-in animation-delay-300 gap-4">
-              
-               <a href="#contact" className="relative overflow-hidden rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-primary flex justify-center items-center px-8 py-4 text-lg bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/25">Contact Me <ArrowRight className="w-5 h-5" /></a>  
-              
+              <a
+                href="#contact"
+                className="relative overflow-hidden rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-primary flex justify-center items-center px-8 py-4 text-lg bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/25"
+              >
+                Contact Me <ArrowRight className="w-5 h-5" />
+              </a>
+
               <AnimatedBorderButton>
                 <Download className="w-5 h-5" />
 
@@ -98,8 +106,14 @@ const Hero = () => {
               <span className="text-sm text-muted-foreground">Follow: </span>
               {[
                 { icon: Github, href: "https://github.com/Sant7611" },
-                { icon: Linkedin, href: "https://www.linkedin.com/in/santosh-bohara-04484624b/" },
-                { icon: Instagram, href: "https://www.instagram.com/_santosh100/" },
+                {
+                  icon: Linkedin,
+                  href: "https://www.linkedin.com/in/santosh-bohara-04484624b/",
+                },
+                {
+                  icon: Instagram,
+                  href: "https://www.instagram.com/_santosh100/",
+                },
               ].map((social, idx) => (
                 <a
                   key={idx}
