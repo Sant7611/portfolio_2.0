@@ -2,25 +2,7 @@ import { AlertCircle, CheckCircle, Mail, MapPin, Phone, Send } from "lucide-reac
 import React, { useState } from "react";
 import Button from "@/components/Button";
 import emailjs from "@emailjs/browser";
-// const contactInfo = [
-//   {
-//     icon: Mail,
-//     label: "Email",
-//     value: "surveerqwer123@gmail.com",
-//     href: "mailto:sbohara579@gmail.com",
-//   },
-//   {
-//     icon: Phone,
-//     label: "Phone",
-//     value: "+9779808188011",
-//     href: "tel:+9779808188011",
-//   },
-//   {
-//     icon: MapPin,
-//     label: "Location",
-//     value: "Tokha, kathmandu",
-//     href: "#",
-//   },];
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({

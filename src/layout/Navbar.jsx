@@ -51,11 +51,18 @@ const Navbar = () => {
 
         {/* CTA button  */}
         <div className="hidden md:block">
-          <a className="relative overflow-hidden rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/25 px-3 py-2" href="#contact" size="sm">Contact me</a>
+          <a
+            className="relative overflow-hidden rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/25 px-3 py-2"
+            href="#contact"
+            size="sm"
+          >
+            Contact me
+          </a>
         </div>
 
         {/* {Mobile menu button } */}
         <button
+          aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
           className="md:hidden p-2 text-foreground cursor-pointer"
           onClick={() => setIsMobileMenuOpen((prev) => !prev)}
         >
@@ -78,8 +85,8 @@ const Navbar = () => {
               </a>
             ))}
 
-            <Button onClick={() => setIsMobileMenuOpen(false)} size="sm">
-             <a href="#contact">Contact me</a> 
+            <Button aria-label="Contact me" onClick={() => setIsMobileMenuOpen(false)} size="sm">
+              <a href="#contact">Contact me</a>
             </Button>
           </div>
         </div>

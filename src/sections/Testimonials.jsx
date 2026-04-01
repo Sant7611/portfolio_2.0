@@ -95,20 +95,20 @@ const Testimonials = () => {
 
             {/* testimonial navigation  */}
             <div className="flex items-center justify-center gap-4 mt-8">
-              <button className="p-3 glass rounded-full hover:bg-primary/10 hover:text-primary transition-all " onClick={previous} >
+              <button aria-label="left scroll" className="p-3 glass rounded-full hover:bg-primary/10 hover:text-primary transition-all " onClick={previous} >
                 <ChevronLeft />
               </button>
 
               <div className="flex gap-2">
                 {testimonials.map((_, idx) => (
-                  <button
+                  <button aria-label={`scroll to testimonial ${idx + 1}`}
                     key={idx}
                     onClick={()=>setActiveIdx(idx)}
                     className={`w-2 rounded-full h-2 translate-all duration-300 ${idx === activeIdx ? "w-8 bg-primary " : "bg-muted-foreground/30 hover:bg-muted-foreground/50 "} `}
                   />
                 ))}
               </div>
-              <button className="p-3 glass rounded-full hover:bg-primary/10 hover:text-primary transition-all" onClick={next}>
+              <button aria-label="right scroll" className="p-3 glass rounded-full hover:bg-primary/10 hover:text-primary transition-all" onClick={next}>
                 <ChevronRight />
               </button>
             </div>
