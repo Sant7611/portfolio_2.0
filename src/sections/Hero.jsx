@@ -63,7 +63,7 @@ const Hero = () => {
                 Welcome I'm{" "}
                 <span className="text-primary glow-text ">Santosh Bohara</span>
               </h1>
-              <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
+              <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200 text-justify ">
                 — an aspiring frontend developer with specific interests in
                 React, Next.js, and TypeScript. I find joy in building
                 well-designed, responsive, and user-friendly web interfaces

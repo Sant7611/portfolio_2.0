@@ -85,7 +85,7 @@ const Projects = () => (
                 </h3>
                 <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
               </div>
-              <p className="text-muted-foreground text-sm">
+              <p className="text-muted-foreground text-sm text-justify">
                 {project.description}{" "}
               </p>
               <div className="flex flex-wrap gap-2">

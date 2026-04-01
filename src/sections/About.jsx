@@ -49,15 +49,15 @@ const About = () => {
                
             </h2>
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
-              <p>
+              <p className="text-justify" >
                 I am a frontend developer with a passion for bringing ideas to life, delivering fast, beautiful, and intuitive experiences for the web. While my technology stack includes my favorites, React, Next.js, and TypeScript, my passion for delivering code that I know I will appreciate tomorrow is even stronger.
               </p>
 
-              <p>
+              <p className="text-justify">
                 While delivering functional code is important, delivering functional and coherent code is even better. While this may sound simple, this is exactly my approach to frontend development. Version control is, for me, my daily documentation.
               </p>
 
-              <p>
+              <p className="text-justify">
                While I spend a lot of time optimizing visuals and dealing with the never-ending world of CSS, I also spend time experimenting with new technologies, honing my problem-solving skills, and striving for that elusive sweet spot where design meets performance. While my goal is to deliver experiences that people actually enjoy, my ultimate goal is to continue to improve and deliver better experiences.
               </p>
             </div>
@@ -81,7 +81,7 @@ const About = () => {
                   <item.icon className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-muted-foreground text-justify">
                   {item.description}
                 </p>
               </div>
