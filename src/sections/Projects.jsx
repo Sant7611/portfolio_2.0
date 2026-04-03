@@ -1,13 +1,11 @@
 import { ArrowUpRight, Github } from "lucide-react";
-import AnimatedBorderButton from "@/components/AnimatedBorderButton";
-import React from "react";
 
 const projects = [
   {
     title: "News Magazine",
     description:
       "This is the full stack news magazine website that provides news articles across various categories. There is the backend admin panel to manage the content, categories and users.",
-    image: "/projects/NewsMagazine.png",
+    image: "/projects/NewsMagazine.webp",
     tags: ["HTML", "CSS", "PHP", "MySQL", "JavaScript", "Jquery"],
     Link: "#",
     github: "https://github.com/Sant7611/news-magazine",
@@ -16,7 +14,7 @@ const projects = [
     title: "Otaku Oasis- Anime Information System ",
     description:
       "Otaku Oasis is envisioned as an innovative platform that parallels popular movie databases, offering users a comprehensive repository of information dedicated solely to anime series.",
-    image: "/projects/OtakuOasis.png",
+    image: "/projects/OtakuOasis.webp",
     tags: ["HTML", "CSS", "PHP", "MySQL", "JavaScript", "Jquery"],
     Link: "#",
     github: "#",
@@ -63,6 +61,7 @@ const Projects = () => (
               {/* overlay links  */}
               <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <a
+                aria-label={project.title}
                   href={project.Link}
                   className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-colors duration-300 "
                 >
@@ -70,6 +69,7 @@ const Projects = () => (
                 </a>
                 <a
                   href={project.github}
+                  aria-label={`View ${project.title} on GitHub`}
                   className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
                 >
                   <Github className="w-5 h-5" />

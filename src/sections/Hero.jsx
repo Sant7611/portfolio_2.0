@@ -75,6 +75,7 @@ const Hero = () => {
             {/* CTA  */}
             <div className="flex flex-wrap animate-fade-in animation-delay-300 gap-4">
               <a
+              aria-label="contactme"
                 href="#contact"
                 className="relative overflow-hidden rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-primary flex justify-center items-center px-8 py-4 text-lg bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/25"
               >
@@ -85,6 +86,7 @@ const Hero = () => {
                 <Download className="w-5 h-5" />
 
                 <button
+                  aria-label="Download CV"
                   onClick={() => {
                     if (window.gtag) {
                       window.gtag("event", "download_cv", {
@@ -105,18 +107,23 @@ const Hero = () => {
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow: </span>
               {[
-                { icon: Github, href: "https://github.com/Sant7611" },
+                { icon: Github, href: "https://github.com/Sant7611",
+                  ariaLabel: "GitHub Profile"
+                 },
                 {
                   icon: Linkedin,
                   href: "https://www.linkedin.com/in/santosh-bohara-04484624b/",
+                  ariaLabel: "LinkedIn Profile"
                 },
                 {
                   icon: Instagram,
                   href: "https://www.instagram.com/_santosh100/",
+                  ariaLabel: "Instagram Profile"
                 },
               ].map((social, idx) => (
                 <a
                   key={idx}
+                  aria-label={social.ariaLabel}
                   href={social.href}
                   className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
                 >
@@ -133,7 +140,7 @@ const Hero = () => {
               <div className="absolute inset-0 rounded-3xl bg-linear-to-br from-primary/30 via-transparent to-primary/10 blur-2xl animate-pulse" />
               <div className="relative glass rounded-3xl p-2 glow-border">
                 <img
-                  src="/profile.jpg"
+                  src="/profile-opt.webp"
                   alt="Santosh Bohara"
                   className="w-full aspect-4/5 object-cover rounded-2xl "
                 />

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "../components/Button";
 import { Menu, X } from "lucide-react";
 
@@ -30,7 +30,8 @@ const Navbar = () => {
     >
       <nav className="container mx-auto px-6 flex justify-between items-center">
         <a
-          href="#"
+        aria-label="Home"
+          href="#home"
           className="text-xl font-bold tracking-tight hover:text-primary"
         >
           SB<span className="text-primary">.</span>
@@ -43,6 +44,7 @@ const Navbar = () => {
               href={link.href}
               key={index}
               className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface"
+              aria-label={link.label}
             >
               {link.label}
             </a>
@@ -52,6 +54,7 @@ const Navbar = () => {
         {/* CTA button  */}
         <div className="hidden md:block">
           <a
+            aria-label="Contact me"
             className="relative overflow-hidden rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/25 px-3 py-2"
             href="#contact"
             size="sm"
@@ -76,6 +79,7 @@ const Navbar = () => {
           <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
             {navLinks.map((link, index) => (
               <a
+                aria-label={link.label}
                 onClick={() => setIsMobileMenuOpen(false)}
                 href={link.href}
                 key={index}
@@ -85,8 +89,14 @@ const Navbar = () => {
               </a>
             ))}
 
-            <Button aria-label="Contact me" onClick={() => setIsMobileMenuOpen(false)} size="sm">
-              <a href="#contact">Contact me</a>
+            <Button
+              aria-label="Contact me"
+              onClick={() => setIsMobileMenuOpen(false)}
+              size="sm"
+            >
+              <a href="#contact" aria-label="contactme">
+                Contact me
+              </a>
             </Button>
           </div>
         </div>

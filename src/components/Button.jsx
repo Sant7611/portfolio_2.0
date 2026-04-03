@@ -1,5 +1,3 @@
-import React from "react";
-
 const Button = ({ className, size='default', children, ...props }) => {
   const baseClasses = "relative overflow-hidden rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-primary bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/25";
 

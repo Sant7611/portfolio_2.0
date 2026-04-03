@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Footer = () => {
   return (
     <footer className='animate-fade-in animation-delay-100 overflow-hidden' >

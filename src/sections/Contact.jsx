@@ -1,8 +1,10 @@
-import { AlertCircle, CheckCircle, Mail, MapPin, Phone, Send } from "lucide-react";
-import React, { useState } from "react";
+import {
+  AlertCircle,
+  CheckCircle,
+  Send,
+} from "lucide-react";
+import { useState } from "react";
 import Button from "@/components/Button";
-import emailjs from "@emailjs/browser";
-
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -23,13 +25,14 @@ const Contact = () => {
       const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
       const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
       const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-      console.log(serviceId, templateId, publicKey);
 
       if (!serviceId || !templateId || !publicKey) {
         throw new Error(
           "EmailJs configuration is missing please check your env file.",
         );
       }
+
+      const { default: emailjs } = await import("@emailjs/browser");
 
       await emailjs.send(
         serviceId,
@@ -52,7 +55,6 @@ const Contact = () => {
         message: "",
       });
     } catch (err) {
-      console.log(err);
       setSubmitStatus({
         type: "error",
         message: err.text || "Failed to send message.",
@@ -71,13 +73,12 @@ const Contact = () => {
           Get in touch
         </span>
         <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
-          Let's Ship, {" "}
+          Let's Ship,{" "}
           <span className="font-serif italic font-normal text-white">
             {" "}
             Something Awesome.
           </span>
         </h2>
-        
       </div>
       <div className="gap-12 max-w-5xl mx-auto">
         <div className="glass p-8 rounded-3xl border border-primary/30 animate-fade-in animation-delay-300">
@@ -131,6 +132,7 @@ const Contact = () => {
               />
             </div>
             <Button
+              aria-label={isLoading ? "Sending Message" : "Send Message"}
               className="w-full  "
               type="submit"
               size="lg"
@@ -145,14 +147,16 @@ const Contact = () => {
               )}
             </Button>
             {submitStatus.type && (
-              <div className={`flex items-center gap-3 p-4 rounded-xl ${
-                submitStatus.type === 'success' ?
-                "bg-green-500/10 border border-green-500/20 text-green-700 "
-                : "bg-red-500/10 border border-red-500/20 text-red-700 "
-              } `} >
-                {submitStatus.type === 'success' ? (
+              <div
+                className={`flex items-center gap-3 p-4 rounded-xl ${
+                  submitStatus.type === "success"
+                    ? "bg-green-500/10 border border-green-500/20 text-green-700 "
+                    : "bg-red-500/10 border border-red-500/20 text-red-700 "
+                } `}
+              >
+                {submitStatus.type === "success" ? (
                   <CheckCircle className="w-5 h-5 shrink-0" />
-                ): (
+                ) : (
                   <AlertCircle className="w-5 h-5 shrink-0" />
                 )}
                 <p> {submitStatus.message} </p>
