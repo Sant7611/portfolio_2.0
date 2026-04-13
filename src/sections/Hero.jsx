@@ -75,7 +75,7 @@ const Hero = () => {
             {/* CTA  */}
             <div className="flex flex-wrap animate-fade-in animation-delay-300 gap-4">
               <a
-              aria-label="contactme"
+                aria-label="contactme"
                 href="#contact"
                 className="relative overflow-hidden rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-primary flex justify-center items-center px-8 py-4 text-lg bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/25"
               >
@@ -85,7 +85,8 @@ const Hero = () => {
               <AnimatedBorderButton>
                 <Download className="w-5 h-5" />
 
-                <button
+                <a
+                  href="https://tinyurl.com/4t6ypyxf"
                   aria-label="Download CV"
                   onClick={() => {
                     if (window.gtag) {
@@ -95,11 +96,12 @@ const Hero = () => {
                       });
                     }
                     // Open the CV in a new tab
-                    window.open("/santosh_Bohara_CV.pdf", "_blank");
+                    // window.open("/santosh_Bohara_CV.pdf", "_blank");
                   }}
+                  target="_blank"
                 >
                   Download CV
-                </button>
+                </a>
               </AnimatedBorderButton>
             </div>
 
@@ -107,18 +109,20 @@ const Hero = () => {
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow: </span>
               {[
-                { icon: Github, href: "https://github.com/Sant7611",
-                  ariaLabel: "GitHub Profile"
-                 },
+                {
+                  icon: Github,
+                  href: "https://github.com/Sant7611",
+                  ariaLabel: "GitHub Profile",
+                },
                 {
                   icon: Linkedin,
                   href: "https://www.linkedin.com/in/santosh-bohara-04484624b/",
-                  ariaLabel: "LinkedIn Profile"
+                  ariaLabel: "LinkedIn Profile",
                 },
                 {
                   icon: Instagram,
                   href: "https://www.instagram.com/_santosh100/",
-                  ariaLabel: "Instagram Profile"
+                  ariaLabel: "Instagram Profile",
                 },
               ].map((social, idx) => (
                 <a
