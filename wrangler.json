@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "portfolio-ii",
+  "name": "portfolio",
   "pages_build_output_dir": "./dist",
   "assets": {
     "directory": "./dist"
