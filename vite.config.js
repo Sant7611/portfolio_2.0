@@ -6,9 +6,11 @@ import { dirname, resolve } from "path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
+import { cloudflare } from "@cloudflare/vite-plugin";
+
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [react(), tailwindcss(), cloudflare()],
   resolve: {
     alias: {
       "@": resolve(__dirname, "./src"),
