@@ -53,7 +53,7 @@ const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm text-primary glass">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Frontend Developer
+                Backend Developer
               </span>
             </div>
 
@@ -64,11 +64,11 @@ const Hero = () => {
                 <span className="text-primary glow-text ">Santosh Bohara</span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200 text-justify ">
-                — an aspiring frontend developer with specific interests in
-                React, Next.js, and TypeScript. I find joy in building
-                well-designed, responsive, and user-friendly web interfaces
-                while honing my skills in the latest technologies used in web
-                development.
+                — an aspiring backend developer with specific interests in
+                Python, Django, Django REST Framework, and PostgreSQL. I find
+                joy in building secure, scalable, and reliable backend systems
+                while developing clean APIs, working with databases, and
+                strengthening my skills in modern backend technologies.
               </p>
             </div>
 
