@@ -2,24 +2,41 @@ import { ArrowUpRight, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "News Magazine",
+    title: "Student Guidance System",
     description:
-      "This is the full stack news magazine website that provides news articles across various categories. There is the backend admin panel to manage the content, categories and users.",
-    image: "/projects/NewsMagazine.webp",
-    tags: ["HTML", "CSS", "PHP", "MySQL", "JavaScript", "Jquery"],
-    Link: "#",
-    github: "https://github.com/Sant7611/news-magazine",
+      "A full-stack career guidance platform for students pursuing programming and computer-related careers. It provides skill-based assessments, personalized career recommendations, learning paths, counseling, mentorship, real-time notifications, and role-based management for students, counselors, mentors, and administrators.",
+    image: "/projects/StudentGuidanceSystem.webp",
+    tags: [
+      "Python",
+      "Django",
+      "Django REST Framework",
+      "React",
+      "PostgreSQL",
+      "Redis",
+      "WebSocket",
+    ],
+    Link: "https://student-guidance-system-frontend.onrender.com/login",
+    github: "https://github.com/Sant7611/Student-Guidance-System",
   },
   {
-    title: "Otaku Oasis- Anime Information System ",
+    title: "tfacts Blog Platform",
     description:
-      "Otaku Oasis is envisioned as an innovative platform that parallels popular movie databases, offering users a comprehensive repository of information dedicated solely to anime series.",
-    image: "/projects/OtakuOasis.webp",
-    tags: ["HTML", "CSS", "PHP", "MySQL", "JavaScript", "Jquery"],
+      "This is a full-stack blogging platform where users can create, explore, save, and discuss fact-based articles. It includes JWT authentication, post moderation, threaded comments, real-time notifications, user management, search, image uploads, and a Django admin backend.",
+    image: "/projects/tfacts.webp",
+    tags: [
+      "Django",
+      "Django REST Framework",
+      "Next.js",
+      "React",
+      "PostgreSQL",
+      "Redis",
+      "WebSockets",
+      "Docker",
+      "Cloudinary",
+    ],
     Link: "#",
-    github: "#",
+    github: "https://github.com/Sant7611/blog_project",
   },
-
 ];
 
 const Projects = () => (
@@ -61,7 +78,7 @@ const Projects = () => (
               {/* overlay links  */}
               <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <a
-                aria-label={project.title}
+                  aria-label={project.title}
                   href={project.Link}
                   className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-colors duration-300 "
                 >
