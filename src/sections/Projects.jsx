@@ -27,7 +27,7 @@ const projects = [
       "Django",
       "Django REST Framework",
       "Next.js",
-      "React",
+      "React", 
       "PostgreSQL",
       "Redis",
       "WebSockets",
