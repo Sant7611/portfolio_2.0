@@ -5,6 +5,7 @@ import { Menu, X } from "lucide-react";
 const navLinks = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
+  { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
   { href: "#contact", label: "Contact" },
   // { href: "#experience", label: "Experience" },
@@ -30,7 +31,7 @@ const Navbar = () => {
     >
       <nav className="container mx-auto px-6 flex justify-between items-center">
         <a
-        aria-label="Home"
+          aria-label="Home"
           href="#home"
           className="text-xl font-bold tracking-tight hover:text-primary"
         >
