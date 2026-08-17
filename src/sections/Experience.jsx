@@ -2,30 +2,12 @@ import React from "react";
 
 const experience = [
   {
-    period: "2022 - Present",
-    role: "Intern",
-    company: "TechFits Technology pvt.ltd",
+    period: "May 2026 - Aug 2026",
+    role: "Student",
+    company: "Skill Shikshya pvt. ltd",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, nesciunt.",
-    technologies: ["React", "TypeScript", "Next.js", "GraphQL"],
-    current: true,
-  },
-  {
-    period: "2016 - 2021",
-    role: "Intern",
-    company: "TechFits Technology pvt.ltd",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, nesciunt.",
-    technologies: ["React", "TypeScript", "Next.js", "GraphQL"],
-    current: false,
-  },
-  {
-    period: "2010 - 2015",
-    role: "Intern",
-    company: "TechFits Technology pvt.ltd",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, nesciunt.",
-    technologies: ["React", "TypeScript", "Next.js", "GraphQL"],
+      "",
+    technologies: ["Python", "Django", "Django REST Framework(DRF)", "PostgreSQL", "Web Socket", "Docker"],
     current: false,
   },
 ];

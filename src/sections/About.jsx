@@ -40,30 +40,46 @@ const About = () => {
           {/* leftcol */}
           <div className="space-y-8">
             <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
-              Still Loading... Just Kidding, 
+              Still Loading... Just Kidding,
               <span className="font-serif italic font-normal text-white">
                 {" "}
-                Here I Am 
+                Here I Am
               </span>
-               
             </h2>
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
-              <p className="text-justify" >
-                I am a frontend developer with a passion for bringing ideas to life, delivering fast, beautiful, and intuitive experiences for the web. While my technology stack includes my favorites, React, Next.js, and TypeScript, my passion for delivering code that I know I will appreciate tomorrow is even stronger.
+              <p className="text-justify">
+                I am a backend developer passionate about building reliable,
+                secure, and scalable systems that bring ideas to life. My
+                primary focus is developing robust APIs, authentication systems,
+                database-driven applications, and backend services using
+                technologies such as Python, Django, Django REST Framework, and
+                PostgreSQL.
               </p>
 
               <p className="text-justify">
-                While delivering functional code is important, delivering functional and coherent code is even better. While this may sound simple, this is exactly my approach to frontend development. Version control is, for me, my daily documentation.
+                For me, good backend development is about more than making an
+                application work. It is about writing clean, maintainable code,
+                designing clear API contracts, protecting user data, and
+                creating systems that are easy to extend and maintain. Version
+                control and consistent documentation are an important part of my
+                everyday development process.
               </p>
 
               <p className="text-justify">
-               While I spend a lot of time optimizing visuals and dealing with the never-ending world of CSS, I also spend time experimenting with new technologies, honing my problem-solving skills, and striving for that elusive sweet spot where design meets performance. While my goal is to deliver experiences that people actually enjoy, my ultimate goal is to continue to improve and deliver better experiences.
+                I enjoy working with databases, real-time communication,
+                caching, background services, Docker, and deployment workflows.
+                I continuously experiment with new technologies, improve my
+                problem-solving skills, and look for the right balance between
+                performance, security, and reliability to build backend systems
+                that support meaningful user experiences.
               </p>
             </div>
 
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foreground">
-                "To develop clean, scalable, and user-friendly web experiences while constantly learning, innovating, and expanding as a frontend developer."
+                "To develop clean, scalable, and user-friendly web experiences
+                while constantly learning, innovating, and expanding as a
+                frontend developer."
               </p>
             </div>
           </div>
