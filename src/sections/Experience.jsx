@@ -32,8 +32,7 @@ const Experience = () => {
           </h2>
           <p className="text-muted-foreground animate-fade-in animation-delay-200">
             {" "}
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
-            odit ipsum inventore ipsa aperiam modi.{" "}
+            Learn, Create, Break, Build and Repeat{" "}
           </p>
         </div>
 

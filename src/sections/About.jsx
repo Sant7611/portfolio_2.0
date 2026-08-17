@@ -79,7 +79,7 @@ const About = () => {
               <p className="text-lg font-medium italic text-foreground">
                 "To develop clean, scalable, and user-friendly web experiences
                 while constantly learning, innovating, and expanding as a
-                frontend developer."
+                backend developer."
               </p>
             </div>
           </div>

@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 import AnimatedBorderButton from "../components/AnimatedBorderButton";
 
-const skills = ["React", "Next.js", "TypeScript", "Git"];
+const skills = ["Python", "Django", "PostgreSQL", "Redis", "Web Socket"];
 
 const Hero = () => {
   return (

@@ -5,7 +5,7 @@ const projects = [
     title: "Student Guidance System",
     description:
       "A full-stack career guidance platform for students pursuing programming and computer-related careers. It provides skill-based assessments, personalized career recommendations, learning paths, counseling, mentorship, real-time notifications, and role-based management for students, counselors, mentors, and administrators.",
-    image: "/projects/StudentGuidanceSystem.webp",
+    image: "/projects/dashboard.png",
     tags: [
       "Python",
       "Django",
@@ -22,7 +22,7 @@ const projects = [
     title: "tfacts Blog Platform",
     description:
       "This is a full-stack blogging platform where users can create, explore, save, and discuss fact-based articles. It includes JWT authentication, post moderation, threaded comments, real-time notifications, user management, search, image uploads, and a Django admin backend.",
-    image: "/projects/tfacts.webp",
+    image: "/projects/tfacts.png",
     tags: [
       "Django",
       "Django REST Framework",
